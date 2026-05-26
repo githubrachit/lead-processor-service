@@ -1,0 +1,13 @@
+# Prod profile - all values from environment variables or Secrets Manager
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    show-sql: false
+
+logging:
+  level:
+    com.leadplatform: INFO
+    root: WARN
